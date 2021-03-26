@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Bus_ISA_16bit J1
-U 1 1 5FAD818A
-P 3000 4000
-F 0 "J1" H 3000 6767 50  0000 C CNN
-F 1 "Bus_ISA_16bit" H 3000 6676 50  0000 C CNN
-F 2 "Bus_AT_without_Silkscreen:BUS_AT_WO_SILKSCREEN" H 3000 4050 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3000 4050 50  0001 C CNN
-	1    3000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L RTL8019:RTL8019AS U1
 U 1 1 5FADB26A
 P 6350 1850
@@ -69,38 +58,6 @@ Text Label 4050 2200 2    50   ~ 0
 ISA_D1
 Text Label 4050 2300 2    50   ~ 0
 ISA_D0
-Text Label 4050 5700 2    50   ~ 0
-ISA_D8
-Text Label 4050 5800 2    50   ~ 0
-ISA_D9
-Text Label 4050 5900 2    50   ~ 0
-ISA_D10
-Text Label 4050 6000 2    50   ~ 0
-ISA_D11
-Text Label 4050 6100 2    50   ~ 0
-ISA_D12
-Text Label 4050 6200 2    50   ~ 0
-ISA_D13
-Text Label 4050 6300 2    50   ~ 0
-ISA_D14
-Text Label 4050 6400 2    50   ~ 0
-ISA_D15
-Wire Wire Line
-	3700 5700 4050 5700
-Wire Wire Line
-	4050 5800 3700 5800
-Wire Wire Line
-	3700 5900 4050 5900
-Wire Wire Line
-	4050 6000 3700 6000
-Wire Wire Line
-	3700 6100 4050 6100
-Wire Wire Line
-	4050 6200 3700 6200
-Wire Wire Line
-	3700 6300 4050 6300
-Wire Wire Line
-	4050 6400 3700 6400
 Wire Wire Line
 	3700 1600 4050 1600
 Wire Wire Line
@@ -475,17 +432,6 @@ F 3 "" H 4650 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 2400 2300 2400
-$Comp
-L power:GND #PWR0105
-U 1 1 5FB73D29
-P 1550 6600
-F 0 "#PWR0105" H 1550 6350 50  0001 C CNN
-F 1 "GND" H 1555 6427 50  0000 C CNN
-F 2 "" H 1550 6600 50  0001 C CNN
-F 3 "" H 1550 6600 50  0001 C CNN
-	1    1550 6600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 4500 2300 4500
 $Comp
@@ -501,29 +447,9 @@ F 3 "" H 2000 4300 50  0001 C CNN
 $EndComp
 Connection ~ 1550 2400
 Wire Wire Line
-	1550 6600 1550 6400
-Wire Wire Line
-	1550 6400 2300 6400
-Wire Wire Line
-	1550 6400 1550 4500
-Connection ~ 1550 6400
-Wire Wire Line
 	2300 4300 2000 4300
 Wire Wire Line
 	1750 1700 2300 1700
-$Comp
-L power:+5V #PWR0107
-U 1 1 5FBC7376
-P 2000 6200
-F 0 "#PWR0107" H 2000 6050 50  0001 C CNN
-F 1 "+5V" H 2015 6373 50  0000 C CNN
-F 2 "" H 2000 6200 50  0001 C CNN
-F 3 "" H 2000 6200 50  0001 C CNN
-	1    2000 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 6200 2000 6200
 $Comp
 L Ethernet_Transformer:13F-39MNL T?
 U 1 1 5FBE678D
@@ -900,19 +826,6 @@ Wire Wire Line
 	8950 6600 8750 6600
 $Comp
 L Mechanical:MountingHole H?
-U 1 1 5FC1F47E
-P 15250 9650
-AR Path="/5FBCDFD3/5FC1F47E" Ref="H?"  Part="1" 
-AR Path="/5FC1F47E" Ref="H2"  Part="1" 
-F 0 "H2" H 15350 9696 50  0000 L CNN
-F 1 "MountingHole" H 15350 9605 50  0000 L CNN
-F 2 "ToolingHole:ToolingHole_JLCSMT" H 15250 9650 50  0001 C CNN
-F 3 "~" H 15250 9650 50  0001 C CNN
-	1    15250 9650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
 U 1 1 5FC1F484
 P 15250 9450
 AR Path="/5FBCDFD3/5FC1F484" Ref="H?"  Part="1" 
@@ -1032,32 +945,8 @@ Wire Wire Line
 	2300 3800 1850 3800
 Wire Wire Line
 	1850 3900 2300 3900
-Text Label 1850 4900 0    50   ~ 0
-ISA_IRQ10
-Text Label 1850 5000 0    50   ~ 0
-ISA_IRQ11
-Text Label 1850 5100 0    50   ~ 0
-ISA_IRQ12
-Text Label 1850 5200 0    50   ~ 0
-ISA_IRQ15
-Text Label 1850 5300 0    50   ~ 0
-ISA_IRQ14
-Wire Wire Line
-	1850 4900 2300 4900
-Wire Wire Line
-	2300 5000 1850 5000
-Wire Wire Line
-	1850 5100 2300 5100
-Wire Wire Line
-	2300 5200 1850 5200
-Wire Wire Line
-	1850 5300 2300 5300
 Text Label 5150 3250 2    50   ~ 0
 ~ISA_IOCS16
-Text Label 1850 4800 0    50   ~ 0
-~ISA_IOCS16
-Wire Wire Line
-	1850 4800 2300 4800
 Text Label 4800 2150 0    50   ~ 0
 ISA_IRQ2
 Wire Wire Line
@@ -1739,36 +1628,34 @@ Wire Wire Line
 Connection ~ 6550 8950
 Wire Wire Line
 	6550 8950 6800 8950
-Wire Wire Line
-	1550 2400 1550 4500
 Connection ~ 1550 4500
 $Comp
 L Device:C C2
 U 1 1 61893822
-P 1000 6200
-F 0 "C2" H 1115 6246 50  0000 L CNN
-F 1 "47µF 10V" H 1115 6155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1038 6050 50  0001 C CNN
-F 3 "~" H 1000 6200 50  0001 C CNN
-F 4 "C96123" H 1000 6200 50  0001 C CNN "LCSC"
-	1    1000 6200
+P 1000 4300
+F 0 "C2" H 1115 4346 50  0000 L CNN
+F 1 "47µF 10V" H 1115 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1038 4150 50  0001 C CNN
+F 3 "~" H 1000 4300 50  0001 C CNN
+F 4 "C96123" H 1000 4300 50  0001 C CNN "LCSC"
+	1    1000 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0121
 U 1 1 618955B6
-P 1000 6000
-F 0 "#PWR0121" H 1000 5850 50  0001 C CNN
-F 1 "+5V" H 1015 6173 50  0000 C CNN
-F 2 "" H 1000 6000 50  0001 C CNN
-F 3 "" H 1000 6000 50  0001 C CNN
-	1    1000 6000
+P 1000 4100
+F 0 "#PWR0121" H 1000 3950 50  0001 C CNN
+F 1 "+5V" H 1015 4273 50  0000 C CNN
+F 2 "" H 1000 4100 50  0001 C CNN
+F 3 "" H 1000 4100 50  0001 C CNN
+	1    1000 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 6000 1000 6050
+	1000 4100 1000 4150
 Wire Wire Line
-	1000 6400 1550 6400
+	1000 4500 1550 4500
 Wire Wire Line
 	1550 1500 1550 2400
 $Comp
@@ -2141,7 +2028,7 @@ AUI
 Wire Wire Line
 	7350 4400 7700 4400
 Wire Wire Line
-	1000 6350 1000 6400
+	1000 4450 1000 4500
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5FB5664A
@@ -2229,6 +2116,32 @@ F 1 "OSHW Logo" H 15350 9105 50  0000 L CNN
 F 2 "Symbol:OSHW-Logo_11.4x12mm_Copper" H 15250 9150 50  0001 C CNN
 F 3 "~" H 15250 9150 50  0001 C CNN
 	1    15250 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Bus_ISA_8bit J1
+U 1 1 6060D767
+P 3000 3000
+F 0 "J1" H 3000 4767 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 3000 4676 50  0000 C CNN
+F 2 "My_Components:Conn_Edge_PCB_ISA8" H 3000 3000 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2400 1550 4500
+Wire Wire Line
+	1550 4700 1550 4500
+$Comp
+L power:GND #PWR0105
+U 1 1 5FB73D29
+P 1550 4700
+F 0 "#PWR0105" H 1550 4450 50  0001 C CNN
+F 1 "GND" H 1555 4527 50  0000 C CNN
+F 2 "" H 1550 4700 50  0001 C CNN
+F 3 "" H 1550 4700 50  0001 C CNN
+	1    1550 4700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

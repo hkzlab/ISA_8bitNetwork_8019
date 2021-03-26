@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name RTL8019)(type Legacy)(uri ${KIPRJMOD}/RTL8019.lib)(options "")(descr ""))
   (lib (name Ethernet_Transformer)(type Legacy)(uri ${KIPRJMOD}/Ethernet_Transformer.lib)(options "")(descr ""))
+  (lib (name my_components)(type Legacy)(uri ${KIPRJMOD}/my_kicad_library/library/my_components.lib)(options "")(descr ""))
 )
