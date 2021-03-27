@@ -1,6 +1,6 @@
-update=Do 03 Dez 2020 20:05:57 CET
+update=sab 27 mar 2021, 10:08:38
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=gerbers/RevA/schematic.pdf
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -240,13 +250,14 @@ uViaDrill=0.1
 dPairWidth=0.127
 dPairGap=0.57
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=gerbers/RevA/schematic.pdf
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
+[pcbnew/Netclasses/1]
+Name=POWER
+Clearance=0.127
+TrackWidth=0.4
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.127
+dPairGap=0.57
+dPairViaGap=0.25

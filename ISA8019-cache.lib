@@ -287,30 +287,42 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_GND24
+# Device_CP_Small
 #
-DEF Device_Crystal_GND24 Y 0 40 Y N 1 F N
-F0 "Y" 125 200 50 H V L CNN
-F1 "Device_Crystal_GND24" 125 125 50 H V L CNN
+DEF Device_CP_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_CP_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 50 50 1 1 P
+X ~ 2 0 -100 73 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Crystal_Small
+#
+DEF Device_Crystal_Small Y 0 40 N N 1 F N
+F0 "Y" 0 100 50 H V C CNN
+F1 "Device_Crystal_Small" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Crystal*
 $ENDFPLIST
 DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -80 0 N
-P 2 0 1 20 -80 -50 -80 50 N
-P 2 0 1 0 0 -150 0 -140 N
-P 2 0 1 0 0 140 0 150 N
-P 2 0 1 20 80 -50 80 50 N
-P 2 0 1 0 80 0 100 0 N
-P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
-P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 0 200 50 D 50 50 1 1 P
-X 3 3 150 0 50 L 50 50 1 1 P
-X 4 4 0 -200 50 U 50 50 1 1 P
+S -30 -60 30 60 0 1 0 N
+P 2 0 1 15 -50 -30 -50 30 N
+P 2 0 1 15 50 -30 50 30 N
+X 1 1 -100 0 50 R 50 50 1 1 P
+X 2 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -429,21 +441,6 @@ X RD+ 6 -800 -150 100 R 50 50 1 1 P
 X CT 7 -800 -350 100 R 50 50 1 1 P
 X RD- 8 -800 -550 100 R 50 50 1 1 P
 X RX- 9 750 -550 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole
-#
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
