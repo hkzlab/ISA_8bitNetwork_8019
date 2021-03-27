@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 64)
+    (drawings 65)
     (tracks 938)
     (zones 0)
     (modules 53)
@@ -11,14 +11,14 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
-    (32 B.Adhes user hide)
-    (33 F.Adhes user hide)
-    (34 B.Paste user hide)
-    (35 F.Paste user hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -2997,6 +2997,9 @@
     )
   )
 
+  (gr_text "RTL8019\nISA 8-Bit rev.1" (at 65.338 151.934) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_line (start 93.532 99.102) (end 93.532 148.632) (layer B.SilkS) (width 0.12) (tstamp 605F315C))
   (gr_line (start 169.732 163.364) (end 89.468 163.364) (layer Edge.Cuts) (width 0.05) (tstamp 605F2D65))
   (gr_line (start 170.24 155.49) (end 170.24 162.856) (layer Edge.Cuts) (width 0.05) (tstamp 605F2D64))
