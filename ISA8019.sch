@@ -410,7 +410,7 @@ L Device:R R1
 U 1 1 5FB65FAE
 P 4650 3400
 F 0 "R1" H 4580 3354 50  0000 R CNN
-F 1 "27k" H 4580 3445 50  0000 R CNN
+F 1 "10k" H 4580 3445 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 3400 50  0001 C CNN
 F 3 "~" H 4650 3400 50  0001 C CNN
 	1    4650 3400
@@ -1004,17 +1004,6 @@ F 3 "~" H 14850 3950 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J9
-U 1 1 605EED03
-P 14850 4400
-F 0 "J9" H 14900 4600 50  0000 C CNN
-F 1 "IRQ select" H 14900 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 14850 4400 50  0001 C CNN
-F 3 "~" H 14850 4400 50  0001 C CNN
-	1    14850 4400
-	1    0    0    1   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x01 J5
 U 1 1 60626BC2
 P 14850 2100
@@ -1190,17 +1179,6 @@ F 3 "~" H 14350 4400 50  0001 C CNN
 	1    14350 4400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R22
-U 1 1 608B4E30
-P 14350 4500
-F 0 "R22" H 14420 4546 50  0001 L CNN
-F 1 "10k" V 14350 4400 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14280 4500 50  0001 C CNN
-F 3 "~" H 14350 4500 50  0001 C CNN
-	1    14350 4500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	14500 1750 14650 1750
 Wire Wire Line
@@ -1232,23 +1210,16 @@ Wire Wire Line
 Wire Wire Line
 	14650 4400 14500 4400
 Wire Wire Line
-	14500 4500 14650 4500
-Wire Wire Line
 	15550 1750 15550 2100
 Wire Wire Line
 	15550 2100 15150 2100
 Wire Wire Line
 	15550 1750 15150 1750
-Wire Wire Line
-	15550 4500 15150 4500
 Connection ~ 15550 2100
 Wire Wire Line
 	15150 4400 15550 4400
 Wire Wire Line
 	15550 2100 15550 2450
-Connection ~ 15550 4400
-Wire Wire Line
-	15550 4400 15550 4500
 Wire Wire Line
 	15550 4300 15150 4300
 Connection ~ 15550 4300
@@ -1437,14 +1408,10 @@ Text Label 13950 4300 0    50   ~ 0
 IRQS0
 Text Label 13950 4400 0    50   ~ 0
 IRQS1
-Text Label 13950 4500 0    50   ~ 0
-IRQS2
 Wire Wire Line
 	13950 4300 14200 4300
 Wire Wire Line
 	14200 4400 13950 4400
-Wire Wire Line
-	13950 4500 14200 4500
 Text Label 13950 3850 0    50   ~ 0
 PL0
 Text Label 13950 3950 0    50   ~ 0
@@ -2082,4 +2049,15 @@ Wire Wire Line
 Wire Wire Line
 	650  4500 1000 4500
 Connection ~ 1000 4500
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J9
+U 1 1 60802B26
+P 14850 4400
+F 0 "J9" H 14900 4500 50  0000 C CNN
+F 1 "IRQ select" H 14900 4166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 14850 4400 50  0001 C CNN
+F 3 "~" H 14850 4400 50  0001 C CNN
+	1    14850 4400
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
