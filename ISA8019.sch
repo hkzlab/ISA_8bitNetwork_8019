@@ -405,17 +405,6 @@ Text Label 4900 2000 0    50   ~ 0
 ISA_AEN
 Wire Wire Line
 	4900 2000 5250 2000
-$Comp
-L Device:R R1
-U 1 1 5FB65FAE
-P 4650 3400
-F 0 "R1" H 4580 3354 50  0000 R CNN
-F 1 "10k" H 4580 3445 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 3400 50  0001 C CNN
-F 3 "~" H 4650 3400 50  0001 C CNN
-	1    4650 3400
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4650 3250 5250 3250
 $Comp
@@ -2060,4 +2049,6 @@ F 3 "~" H 14850 4400 50  0001 C CNN
 	1    14850 4400
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	4650 3550 4650 3250
 $EndSCHEMATC
