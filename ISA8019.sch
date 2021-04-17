@@ -2056,7 +2056,30 @@ F 3 "~" H 1000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 4100 1000 4200
+	1000 4100 1000 4150
 Wire Wire Line
 	1000 4400 1000 4500
+$Comp
+L Device:CP_Small C16
+U 1 1 607D3DB8
+P 650 4300
+F 0 "C16" H 738 4346 50  0000 L CNN
+F 1 "10uF" H 738 4255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 650 4300 50  0001 C CNN
+F 3 "~" H 650 4300 50  0001 C CNN
+	1    650  4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  4200 650  4150
+Wire Wire Line
+	650  4150 1000 4150
+Connection ~ 1000 4150
+Wire Wire Line
+	1000 4150 1000 4200
+Wire Wire Line
+	650  4400 650  4500
+Wire Wire Line
+	650  4500 1000 4500
+Connection ~ 1000 4500
 $EndSCHEMATC
