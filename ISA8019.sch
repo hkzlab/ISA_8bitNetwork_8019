@@ -889,9 +889,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 2250 5250 2250
 Text Label 4800 2550 0    50   ~ 0
-ISA_IRQ10
+ISA_IRQ6
 Text Label 4800 2650 0    50   ~ 0
-ISA_IRQ11
+ISA_IRQ7
 Text Label 4800 2750 0    50   ~ 0
 ISA_IRQ12
 Text Label 4800 2850 0    50   ~ 0
@@ -1195,10 +1195,6 @@ Wire Wire Line
 Wire Wire Line
 	14650 3950 14500 3950
 Wire Wire Line
-	14500 4300 14650 4300
-Wire Wire Line
-	14650 4400 14500 4400
-Wire Wire Line
 	15550 1750 15550 2100
 Wire Wire Line
 	15550 2100 15150 2100
@@ -1206,11 +1202,7 @@ Wire Wire Line
 	15550 1750 15150 1750
 Connection ~ 15550 2100
 Wire Wire Line
-	15150 4400 15550 4400
-Wire Wire Line
 	15550 2100 15550 2450
-Wire Wire Line
-	15550 4300 15150 4300
 Connection ~ 15550 4300
 Wire Wire Line
 	15550 4300 15550 4400
@@ -2038,17 +2030,47 @@ Wire Wire Line
 Wire Wire Line
 	650  4500 1000 4500
 Connection ~ 1000 4500
+Wire Wire Line
+	4650 3550 4650 3250
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J9
-U 1 1 60802B26
+L Device:R R22
+U 1 1 60871D55
+P 14350 4500
+F 0 "R22" H 14420 4546 50  0001 L CNN
+F 1 "10k" V 14350 4400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14280 4500 50  0001 C CNN
+F 3 "~" H 14350 4500 50  0001 C CNN
+	1    14350 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14650 4500 14500 4500
+Text Label 13950 4500 0    50   ~ 0
+IRQS2
+Wire Wire Line
+	14200 4500 13950 4500
+Wire Wire Line
+	15550 4300 15150 4300
+Wire Wire Line
+	14500 4300 14650 4300
+Wire Wire Line
+	15150 4400 15550 4400
+Wire Wire Line
+	14650 4400 14500 4400
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J9
+U 1 1 608CBD62
 P 14850 4400
-F 0 "J9" H 14900 4500 50  0000 C CNN
-F 1 "IRQ select" H 14900 4166 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 14850 4400 50  0001 C CNN
+F 0 "J9" H 14900 4600 50  0000 C CNN
+F 1 "IRQ Select" H 14900 4166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 14850 4400 50  0001 C CNN
 F 3 "~" H 14850 4400 50  0001 C CNN
 	1    14850 4400
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4650 3550 4650 3250
+	15150 4500 15550 4500
+Wire Wire Line
+	15550 4500 15550 4400
+Connection ~ 15550 4400
 $EndSCHEMATC
