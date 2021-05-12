@@ -31,11 +31,11 @@ I use this 8bit variant in **Jumper mode** (hard to find an 8bit machine with Pn
 
 ### Programming utilities
 
-[RSET8019.EXE](software/Programming%20utilities/Rset8019.exe) for DOS, can set EEPROM parameters, also includes diagnostic functions
-[pg8019](software/Programming%20utilities/pg8019) for DOS, can initialize EEPROM, set MAC address, vendor/product IDs 
+- [RSET8019.EXE](software/Programming%20utilities/Rset8019.exe) for DOS, can set EEPROM parameters, also includes diagnostic functions
+- [pg8019](software/Programming%20utilities/pg8019) for DOS, can initialize EEPROM, set MAC address, vendor/product IDs 
 
 ### Drivers
-[MS-DOS packet drivers, modded for 8-bit XT machines](software/Drivers/Crynwr%20packet%20driver%20-%20modified%20for%208bit%20operation)
+- [MS-DOS packet drivers, modded for 8-bit XT machines](software/Drivers/Crynwr%20packet%20driver%20-%20modified%20for%208bit%20operation)
 
 ## Bill of Materials
 
