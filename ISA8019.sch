@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ISA8019"
 Date "2020-11-12"
-Rev "A"
+Rev "2.2"
 Comp "tbspace.de"
 Comment1 "Tobias Mädel"
 Comment2 ""
@@ -1269,32 +1269,18 @@ Text Label 14050 1750 0    50   ~ 0
 JP
 Wire Wire Line
 	14050 1750 14200 1750
-Text Label 7600 2400 2    50   ~ 0
+Text Label 7850 2400 2    50   ~ 0
 PNP
-Wire Wire Line
-	7350 2400 7600 2400
 Text Label 13950 2100 0    50   ~ 0
 PNP
 Wire Wire Line
 	14200 2100 13950 2100
-Text Label 7600 2500 2    50   ~ 0
+Text Label 7850 2500 2    50   ~ 0
 BS0
-Text Label 7600 2600 2    50   ~ 0
+Text Label 7850 2600 2    50   ~ 0
 BS1
-Text Label 7600 2700 2    50   ~ 0
-BS2
-Text Label 7600 2800 2    50   ~ 0
-BS3
 Text Label 7850 2900 2    50   ~ 0
 BS4
-Wire Wire Line
-	7600 2800 7350 2800
-Wire Wire Line
-	7350 2700 7600 2700
-Wire Wire Line
-	7600 2600 7350 2600
-Wire Wire Line
-	7350 2500 7600 2500
 Text Label 13950 2450 0    50   ~ 0
 BS0
 Text Label 13950 2550 0    50   ~ 0
@@ -1563,8 +1549,6 @@ Text Label 13550 1950 2    50   ~ 0
 BD6
 Text Label 13550 2050 2    50   ~ 0
 BD7
-NoConn ~ 12100 3150
-NoConn ~ 12100 3050
 Wire Wire Line
 	11600 3550 12100 3550
 Wire Wire Line
@@ -1705,7 +1689,7 @@ L Memory_Flash:SST39SF010 U3
 U 1 1 602BB235
 P 12700 2550
 F 0 "U3" H 12350 3850 50  0000 C CNN
-F 1 "SST39SF010 / MX29F001T" V 12700 2550 50  0000 C CNN
+F 1 "SST39SF040" V 12700 2550 50  0000 C CNN
 F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 12700 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 12700 2850 50  0001 C CNN
 	1    12700 2550
@@ -2073,4 +2057,59 @@ Wire Wire Line
 Wire Wire Line
 	15550 4500 15550 4400
 Connection ~ 15550 4400
+Wire Wire Line
+	11750 3150 12100 3150
+Wire Wire Line
+	11750 3050 12100 3050
+Text Label 11750 3050 0    50   ~ 0
+BA17
+Text Label 11750 3150 0    50   ~ 0
+BA18
+Text Label 7850 2800 2    50   ~ 0
+BS3
+Text Label 7850 2700 2    50   ~ 0
+BS2
+Wire Wire Line
+	7350 2400 7850 2400
+Wire Wire Line
+	7350 2500 7850 2500
+Wire Wire Line
+	7350 2600 7850 2600
+Wire Wire Line
+	7350 2700 7850 2700
+Wire Wire Line
+	7350 2800 7850 2800
+Text Label 7400 2800 0    50   ~ 0
+BA17
+Text Label 7400 2700 0    50   ~ 0
+BA18
+Text Label 7400 2600 0    50   ~ 0
+BA19
+Text Label 7400 2500 0    50   ~ 0
+BA20
+Text Label 7400 2400 0    50   ~ 0
+BA21
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 60D56932
+P 10300 2500
+F 0 "J10" H 10380 2542 50  0000 L CNN
+F 1 "Extra Address Lines" H 10380 2451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10300 2500 50  0001 C CNN
+F 3 "~" H 10300 2500 50  0001 C CNN
+	1    10300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2600 10100 2600
+Text Label 9750 2600 0    50   ~ 0
+BA19
+Wire Wire Line
+	9750 2400 10100 2400
+Wire Wire Line
+	9750 2500 10100 2500
+Text Label 9750 2500 0    50   ~ 0
+BA20
+Text Label 9750 2400 0    50   ~ 0
+BA21
 $EndSCHEMATC

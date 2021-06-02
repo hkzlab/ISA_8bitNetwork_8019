@@ -8,7 +8,7 @@ Differences from the original version include:
 - 8bit only design (significantly more compact than the 16bit version)
 - Most of the components are now THT (except EEPROM, Network IC and transformer)
 
-![Rev. 1.0 PCB](pics/ISA8019.png)
+![Rev. 2.2 PCB](pics/ISA8019.png)
 
 ### Disclaimer
 
@@ -55,7 +55,7 @@ You can use [LCSC](https://lcsc.com) to source most of the ICs.
 - R3: 200ohm resistor
 - R2: 1M resistor
 - FB1: Ferrite bead
-- ISA bracket: Keystone 9202, plus screws. You will have to cut a hole for the RJ45 jack
+- ISA bracket: Keystone 9202-1, plus screws. This bracket is made for ISA modems, the hole will be slightly wider than an RJ45 socket.
 
 ## Credits
 
