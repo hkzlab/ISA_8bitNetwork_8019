@@ -1562,16 +1562,16 @@ Text Label 11600 3650 0    50   ~ 0
 Text Label 11600 3550 0    50   ~ 0
 ~BCSB
 Wire Wire Line
-	11750 2950 12100 2950
+	11750 2750 12100 2750
 Wire Wire Line
 	11750 2850 12100 2850
 Wire Wire Line
-	11750 2750 12100 2750
-Text Label 11750 2750 0    50   ~ 0
+	11750 2950 12100 2950
+Text Label 11750 2950 0    50   ~ 0
 BA16
 Text Label 11750 2850 0    50   ~ 0
 BA15
-Text Label 11750 2950 0    50   ~ 0
+Text Label 11750 2750 0    50   ~ 0
 BA14
 Wire Wire Line
 	11750 2650 12100 2650
@@ -1685,7 +1685,7 @@ F 3 "" H 12700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Memory_Flash:SST39SF010 U3
+L Memory_Flash:SST39SF040 U3
 U 1 1 602BB235
 P 12700 2550
 F 0 "U3" H 12350 3850 50  0000 C CNN
