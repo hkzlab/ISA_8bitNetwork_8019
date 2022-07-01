@@ -65,7 +65,7 @@ You can use [LCSC](https://lcsc.com) to source most of the ICs.
 
 ![Rev. 2.2 IRQ6 Trace cut](pics/ISA8019_rev22_irq6cut.png)
 
-The picture above shows where to cut to isolate IRQ6 in case you suffer the described issue. The line is located on the backside of the PCB.
+The picture above shows where to cut to isolate IRQ6 in case you suffer the described issue. The trace is located on the backside of the PCB.
 
 ## Credits
 
