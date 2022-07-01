@@ -60,7 +60,8 @@ You can use [LCSC](https://lcsc.com) to source most of the ICs.
 
 ## Known Issues
 
-- I received a report of this board not allowing Sergey's Micro8088 to boot **unless the IRQ6 line is cut** on the network card. I have been unable to reproduce this, as the builds I completed are working fine on my Micro8088 cards, but be aware in case you incur in the same issue.
+- Revision 2.3 has only minor changes, but has not yet been tested by me. Reports are welcome.
+- I received a report of this board not allowing Sergey's Micro8088 to boot **unless the IRQ6 line is cut** on the network card. I have been unable to reproduce this, as the builds I completed are working fine on my Micro8088 cards, but be aware in case you incur in the same issue. **Revision 2.3 keeps IRQ lines 6 and 7, but makes them jumperable and by default disconnected**.
 
 ## Credits
 
