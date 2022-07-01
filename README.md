@@ -35,6 +35,7 @@ I use this 8bit variant in **Jumper mode** (hard to find an 8bit machine with Pn
 - [pg8019](software/Programming%20utilities/pg8019) for DOS, can initialize EEPROM, set MAC address, vendor/product IDs 
 
 ### Drivers
+
 - [MS-DOS packet drivers, modded for 8-bit XT machines](software/Drivers/Crynwr%20packet%20driver%20-%20modified%20for%208bit%20operation)
 
 ## Bill of Materials
@@ -56,6 +57,10 @@ You can use [LCSC](https://lcsc.com) to source most of the ICs.
 - R2: 1M resistor
 - FB1: Ferrite bead
 - ISA bracket: Keystone 9202-1, plus screws. This bracket is made for ISA modems, the hole will be slightly wider than an RJ45 socket.
+
+## Known Issues
+
+- I received a report of this board not allowing Sergey's Micro8088 to boot **unless the IRQ6 line is cut** on the network card. I have been unable to reproduce this, as the builds I completed are working fine on my Micro8088 cards, but be aware in case you incur in the same issue.
 
 ## Credits
 
