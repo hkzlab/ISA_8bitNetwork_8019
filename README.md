@@ -43,12 +43,13 @@ I use this 8bit variant in **Jumper mode** (hard to find an 8bit machine with Pn
 Revisions 2.4 onward support SRAM chips (e.g. AS6C4008) on the boot ROM slot by correctly bridging J11.
 
 ```text
-J11 for EPROM
+J11 setting, ISA edge connector looking DOWN
+EPROM
     | .
     | |
     . |
     
-J11 for SRAM
+SRAM
     . |
     | |
     | .
