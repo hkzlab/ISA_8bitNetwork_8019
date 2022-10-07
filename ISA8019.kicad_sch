@@ -6,8 +6,8 @@
 
   (title_block
     (title "ISA8019")
-    (date "2022-07-01")
-    (rev "2.3")
+    (date "2022-10-07")
+    (rev "2.4")
     (company "tbspace.de")
     (comment 1 "Tobias Mädel")
   )
