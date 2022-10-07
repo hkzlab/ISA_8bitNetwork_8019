@@ -38,6 +38,28 @@ I use this 8bit variant in **Jumper mode** (hard to find an 8bit machine with Pn
 
 - [MS-DOS packet drivers, modded for 8-bit XT machines](software/Drivers/Crynwr%20packet%20driver%20-%20modified%20for%208bit%20operation)
 
+### UMB Support
+
+Revisions 2.4 onward support SRAM chips (e.g. AS6C4008) on the boot ROM slot by correctly bridging J11.
+
+```text
+J11 for EPROM
+    | .
+    | |
+    . |
+    
+J11 for SRAM
+    . |
+    | |
+    | .
+```
+
+This is not yet tested by me, but is reported working by modifying a previous revision. Reference this [issue](https://github.com/hkzlab/ISA_8bitNetwork_8019/issues/2).
+
+If you wish to use a SRAM chip for UMB support in previous revisions, cut the traces that go to pin 29 and 31 of the boot ROM, and invert them (connect the trace that went to 29 to pin 31, and vice-versa).
+
+The RTL2UMB software can be found in [this](https://forum.vcfed.org/index.php?threads/pc-dos-3-2-for-5150.78476/) thread.
+
 ## Bill of Materials
 
 You can use [LCSC](https://lcsc.com) to source most of the ICs.
@@ -60,8 +82,6 @@ You can use [LCSC](https://lcsc.com) to source most of the ICs.
 
 ## Known Issues
 
-- Revision 2.4 includes support for 512k SRAM chips (e.g. AS6C4008) on the boot ROM slot by correctly bridging J11. Not yet tested by me. Reference this [issue](https://github.com/hkzlab/ISA_8bitNetwork_8019/issues/2).
-    - If you wish to use a SRAM chip for UMB support in previous revisions, cut the traces that go to pin 29 and 31 of the boot ROM, and invert them (connect the trace that went to 29 to pin 31, and vice-versa). The RTL2UMB software can be found [here](https://forum.vcfed.org/index.php?threads/pc-dos-3-2-for-5150.78476/).
 - Revision 2.3 has only minor changes, but has not yet been tested by me. Reports are welcome.
 - I received a report of this board not allowing Sergey's Micro8088 to boot **unless the IRQ6 line is cut** on the network card. I have not been to reproduce this (maybe because I'm using a terminated backplane?), as the builds I completed are working fine on my Micro8088 cards, but be aware in case you incur in the same issue. **Revision 2.3 keeps IRQ lines 6 and 7, but makes them jumperable and by default disconnected**, so if you have that revision, this should no longer be an issue.
 
